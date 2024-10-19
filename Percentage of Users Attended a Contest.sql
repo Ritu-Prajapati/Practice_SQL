@@ -15,3 +15,5 @@ Select contest_id , round((registered_users*100/total_user),2) as percentage
 from contestregisteration c
 cross join totalusers t      -- cross joins is used because total no. of user gives single row and contestregisteration gives multiple rowsa and  attaches the total number of users to every contest registration
 order by percentage desc, contest_id asc
+
+
